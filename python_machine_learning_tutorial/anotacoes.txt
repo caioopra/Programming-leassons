@@ -1,0 +1,8 @@
+Passos em projeto de ML:
+	Importar dados
+	Preparar/Limpar os dados
+	Selecionar algoritmo para treinar modelo
+	Treinar modelo
+	Tentar fazer previsoes
+	Testa precisão
+	Avaliar e mudar/melhorar
