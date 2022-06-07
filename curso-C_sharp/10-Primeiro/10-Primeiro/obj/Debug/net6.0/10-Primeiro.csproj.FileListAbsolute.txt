@@ -1,0 +1,15 @@
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\bin\Debug\net6.0\10-Primeiro.exe
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\bin\Debug\net6.0\10-Primeiro.deps.json
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\bin\Debug\net6.0\10-Primeiro.runtimeconfig.json
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\bin\Debug\net6.0\10-Primeiro.dll
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\bin\Debug\net6.0\10-Primeiro.pdb
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\obj\Debug\net6.0\10-Primeiro.csproj.AssemblyReference.cache
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\obj\Debug\net6.0\10-Primeiro.GeneratedMSBuildEditorConfig.editorconfig
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\obj\Debug\net6.0\10-Primeiro.AssemblyInfoInputs.cache
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\obj\Debug\net6.0\10-Primeiro.AssemblyInfo.cs
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\obj\Debug\net6.0\10-Primeiro.csproj.CoreCompileInputs.cache
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\obj\Debug\net6.0\10-Primeiro.dll
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\obj\Debug\net6.0\refint\10-Primeiro.dll
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\obj\Debug\net6.0\10-Primeiro.pdb
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\obj\Debug\net6.0\10-Primeiro.genruntimeconfig.cache
+E:\Caio\Programacao\curso_C-sharp\10-Primeiro\10-Primeiro\obj\Debug\net6.0\ref\10-Primeiro.dll
