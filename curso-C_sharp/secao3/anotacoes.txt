@@ -1,0 +1,46 @@
+15 e 16. Tipos básicos de dados em C#
+-> estaticamente tipada
+
+C# type - .NetFramework Type - Signed   - Bytes - Possible Values
+
+sbyte	- System.SByte	- sim	- 1	- -128 a 127
+short	- System.Int16	- sim	- 2	- -32768 a 32767
+int	- System.Int32	- sim	- 4	- -2^31 a 2^31 -1	*
+long	-		- sim   - 8 	- -2^63 a 2^63 -1	*
+byte    - 		- nao	- 1	- 0 a 255
+ushort	-		- nao	- 2	- 0 a 65535
+uint	-		- nao   - 4	- 0 a 2^32 - 1
+ulong	-		- nao	- 8	- 0 a 2^64 - 1
+
+float	-		- sim	- 4	- +-1.5x10^-45 a +-3.4x10^38 com 7 casas decimais		*
+double	-		- sim	- 8	- +-5.0x10^-324 a +-1.7x10^308 com 15 ou 16 casas decimais	*
+decimal -		- sim	- 12	- +-1.0x10^-28  a +-7.9x10^28 com 28 ou 29 casas decimais
+
+char    -		- N/A   - 2	- caracter Unicode
+bool	-		- N/A   - 1/2   - true ou false
+
+-> os tipos deo .Net precisam do namespace System
+-> ao extrapolar o limite do valor, vai para o limite oposto (um byte que soma 255 + 1 = 0)
+	-> complemento de 2
+
+-> ao usar long: colocar L no final do valor
+-> char: aspas simples
+	-> ou pode usar a codificação Unicode: '\u...'
+
+-> usar float: valorf
+-> usar double: valor
+
+-> string não é tipo básico da ling.
+	-> é uma cadeia de caractéres Unicode e é imutável
+	-> quando "muda" chamando a variável e dando valor, está criando uma string e atribuindo ela à variável
+-> object: objeto genérico (toda classe em C# é subclasse de object)
+	-> pode atribuir qualquer coisa à ela
+
+-> dentro dos tipos, há propriedades: .MinValue e .MaxValue
+
+
+17. Restrições e conveções para nomes
+-> parâmetros de métodos, var dentro de métodos: camelCase
+-> namespaces, classe, properties e métodos    : PascalCase
+-> atributos internos da classe (privado)     : _padraoLastName
+

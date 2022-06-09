@@ -1,0 +1,24 @@
+11. Estrutura básica de um programa C#
+-> .vs: pasta de configs do visualstudio
+
+-> .sln: dentro do projeto
+
+=> dentro da pasta do projeto:
+	-> .csproj: arquivo de cfg do projeto
+	-> Program.cs: arquivo C#
+	-> bin e obj: pastas com arquivos compilados
+
+=> estrutura do código em C# (aula 10)
+
+using System;  => referência para o namespace System do .NET
+	-> possui comandos e funções dele
+
+namespace NomeProjeto	=> agrupamento das classes do programa (por padrão é o mesmo do projeto, mas pode mudar)
+	-> não é obrigatório (por boa prática e organização, classes vão dentro da namespaces)
+class Program (nome da classe o mesmo do arquivo por padrão)
+	-> tudo no C# vai dentro das classes
+
+
+-> reabrir projeto: arquivo .sln
+
+-> indentação automática: CTRL + K + D
