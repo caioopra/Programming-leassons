@@ -44,3 +44,8 @@ bool	-		- N/A   - 1/2   - true ou false
 -> namespaces, classe, properties e métodos    : PascalCase
 -> atributos internos da classe (privado)     : _padraoLastName
 
+
+===========
+-> compilar os programas: mcs arquivo.cs
+-> executar: mono arquivo.exe
+
