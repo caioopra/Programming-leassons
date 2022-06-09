@@ -48,4 +48,5 @@ bool	-		- N/A   - 1/2   - true ou false
 ===========
 -> compilar os programas: mcs arquivo.cs
 -> executar: mono arquivo.exe
+==========
 
