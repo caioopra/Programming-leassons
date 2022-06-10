@@ -50,3 +50,69 @@ bool	-		- N/A   - 1/2   - true ou false
 -> executar: mono arquivo.exe
 ==========
 
+18. Saída de dados em C#
+-> Console.WriteLine( ... )   => mostra no console e quebra linha
+-> Console.Write( ... )       => não quebra linha
+-> vs/vscode: cw + tab preenche
+
+-> printar float/double controlando casas decimais: varFloat.ToString("Fx")
+	-> onde x é o número de casas decimais
+	-> faz arredondamento (>= 5 vai pra cima)
+
+-> mudar de , para . (visto quando o sist está em PT por exemplo): 
+	-> precisa do namespace System.Globalization
+	-> cw(variavel.ToString("Fx", CultureInfo.InvariantCulture))
+
+=> placeholders: cw("{0}...{1}...{2}...{...}", var0, var1, var2, ..., varn)
+	-> formatação: {numVar:Fx} (parte da conc é :Fx)
+=> interpolação: cw($"{variavel} ... {variavel2:Fx}")
+=> concatenação: como em python, usando +
+	-> pode formatar cada variável individual
+
+
+19. Operadores de atribuição
+-> funciona +=, -=, ...
+-> ++ e --
+	-> a++ ou ++a (o mesmo para -)
+-> a = 10; b = a ++	=> a = 11 e b = 10
+	-> se fizesse b = ++a, b = 11 (atribuição acontece depois da soma nesse caso)
+
+
+20. Conversão imlícita e casting
+-> conteúdo de certo tipo pode ser naturalmente atribuído para var de outro tipo
+	-> float x = 4.5; double y = x;  => possível (qtd de bytes compatível)
+	-> do contrário não funcionaria, não pode ocupar mais espaço do que a variável aguenta 
+		-> se quiser fazer isso, faz casting
+-> casting: (novoTipo)variavel;		=> vai deixar fazer a conversão, mesmo que haja perca de dados
+	-> cast de float/double para int: pega apenas a parte inteira
+-> int a = 5; int b = 2; double resultado = a / b  -> resultado vai ter apenas a parte inteira, vai interpretar como div inteira
+	-> para garantir, faz casting para double ou float em uma das variáveis
+
+
+21. Operadores aritméticos
++, -, *, /, %
+-> quando trabalhar com valores decimais, se for usar o valor diretamente, pode colocar "valor.0"
+	-> garante que vai retornar com casas decimais
+
+-> exponenciação: Math.Pow(base, expo) (expo.0 se quiser)
+-> sqrt: Math.sqrt(valor)
+
+
+22 e 23. Entradas de dados em C#
+-> ler dados do teclado: Console.ReadLine()
+	-> lê até quando tiver quebra de linha (enter)
+	-> dados retornados na forma de string
+
+string variavel = Console.ReadLine();
+-> vai armazenar dentro de "variavel" o que for passado pelo teclado
+
+-> armazenar em várias variáveis o que é escrito em uma mesma linha (usando Split):
+	-> armazena na memória a string inteira, usa split para separar pelos espaços
+	string s = Console.ReadLine();   // le a string completa
+	string[] vet = s.Split(' ');
+		-> vetor vet
+	-> poderia colocar cada parte da string em uma variável diferente, basta acessar cada posição do vetor vet[0] ... vet[n-1]
+-> pode simplificar em uma linha: 
+	string[] v = Console.ReadLine().Split(' ');
+	-> já le e na mesma linha separa
+ 
