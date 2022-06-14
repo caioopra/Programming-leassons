@@ -103,7 +103,7 @@ bool	-		- N/A   - 1/2   - true ou false
 	-> lê até quando tiver quebra de linha (enter)
 	-> dados retornados na forma de string
 
-string variavel = Console.ReadLine();
+string variavel = Console.ReadLine();	=> retorna string
 -> vai armazenar dentro de "variavel" o que for passado pelo teclado
 
 -> armazenar em várias variáveis o que é escrito em uma mesma linha (usando Split):
@@ -115,4 +115,14 @@ string variavel = Console.ReadLine();
 -> pode simplificar em uma linha: 
 	string[] v = Console.ReadLine().Split(' ');
 	-> já le e na mesma linha separa
- 
+
+ -> se quiser ler inteiro: int n1 = int.Parse(Console.ReadLine());
+	-> se digitar valor não inteiro, dá exceção (FormatException)
+-> ler char: char ch = char.Parse(Console.ReadLine());
+-> ler double: double db = double.Parse(Console.ReadLine());
+	-> se tiver problema por conta da vírgula ser casa decimal em PT: ...(Console.ReadLine(), CultureInfo.InvariantCulture)
+
+
+25. Operadores comparativos
+>, <, >=, <=, ==, !=
+
