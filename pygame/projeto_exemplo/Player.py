@@ -1,7 +1,6 @@
 import pygame
 from pygame.locals import *
-import random
-import os
+
 
 class Player(pygame.sprite.Sprite):
     def __init__(self, screen_width: int):

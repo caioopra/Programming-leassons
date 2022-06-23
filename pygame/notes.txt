@@ -60,6 +60,10 @@
         circulo  : pygame.draw.circle(surface, color, center_point, radius, width)
         elipse   : pygame.draw.ellipse(surface, color, bounding_rectangle, width)
         retangulo: pygame.draw.rect(surface, color, rectangle_tuple, width)
+	
+    -> blit(fonte, destino, area=None, special_flags=0) -> Rect
+        desenha Surface source em outra Surface (destino)
+	dest = coordenadas que representam canto superior do blit/Rect (usado para posicionar)
     
 - FPS:
     -> por padrão, se não tiver limite, vai executar o game loop quantas vezes conseguir em um segundo
@@ -90,7 +94,10 @@
 
     -> pygame.image é contada como surface
 
-https://coderslegacy.com/python/pygame-tutorial-part-2/ 
-    -> explanation # Creating Sprites Groups
-https://coderslegacy.com/python/pygame-tutorial-part-3/
+- Criar background:
+    -> carrega a imagem fora do game loop
+	background = pygame.image.load("arquivo")
+    -> desenha no loop com blit()
+    -> considerar sistema de camadas, precisa desenhar primeiro o fundo para nao sobrepor sprites
+
 https://www.pygame.org/docs/ref/surface.html#pygame.Surface.blit
