@@ -21,7 +21,7 @@ WHITE = (255, 255, 255)
 # ? informacoes sobre a tela e jogo
 SCREEN_WIDTH = 400
 SCREEN_HEIGHT = 600
-SPEED = 5
+SPEED = 10
 SCORE = 0
 
 # ? configuracao fontes
@@ -60,7 +60,7 @@ while True:
     # percorre eventos
     for event in pygame.event.get():
         if event.type == INC_SPEED:
-            SPEED += 0.5
+            SPEED += 2
 
         if event.type == QUIT:
             pygame.quit()
@@ -75,7 +75,11 @@ while True:
     # ? move e redesenha todos sprites
     for entity in all_sprites:
         DISPLAY_SURF.blit(entity.image, entity.rect)  # desenha
-        entity.move()  # nesse caso, como todos inimigos possuem move(), faz cada um se mover
+        
+        if isinstance(entity, Enemy):
+            SCORE = entity.move(SCORE)  # nesse caso, como todos inimigos possuem move(), faz cada um se mover
+        else:
+            entity.move()
 
     # ? roda quando ocorre colisão entre Player e Inimigo
     # spritecollideany(sprite, SpriteGroup) -> ve se o primeiro esta colidindo com algum do grupo

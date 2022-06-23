@@ -33,9 +33,12 @@ class Enemy(pygame.sprite.Sprite):
     def screen_width(self):
         return self.__screen_width
 
-    def move(self):
+    def move(self, score: int) -> int:
         self.rect.move_ip(0, self.speed)
 
         if self.rect.bottom > 600:
+            score += 10
             self.rect.top = 0
             self.rect.center = (randint(30, 370), 0)
+        
+        return score
