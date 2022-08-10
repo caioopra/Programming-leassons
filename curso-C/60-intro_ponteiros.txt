@@ -1,0 +1,4 @@
+int = 4 bits
+
+endereço x valor da variável
+	-> endereço = começo da variável na memoria
