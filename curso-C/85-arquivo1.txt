@@ -1,0 +1,5 @@
+string para leitura
+palavra legal
+cachorro quente
+Primeira linha
+Segunda linha3

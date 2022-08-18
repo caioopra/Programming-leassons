@@ -1,0 +1,3 @@
+string para leitura
+palavra legal
+cachorro quente
