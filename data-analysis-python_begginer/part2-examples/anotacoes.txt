@@ -1,0 +1,17 @@
+=> ler .csv: pandas.read_csv("caminho/relativo")
+	-> parse_dates=["Date"]
+	
+.mean()	=> média
+
+.plot(kind="...", figsize(largura, altura))
+	kind="density" ou kind="kde" 
+	kind="box"
+	kind="hist", bins=x => histograma com x "divisões"
+	kind="pie"  => gráfico de pizza
+	kind="bar"
+	
+df[col].value_counts()	=> conta a quantidade de ocorrências para cada valor da coluna
+df.head()
+	-> pode passar valor (n)
+df[col].unique()	=> por exemplo, mostrar os produtos (sem repetir, vai mostrar um array com todos eles)
+

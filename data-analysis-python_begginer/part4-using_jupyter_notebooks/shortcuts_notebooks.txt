@@ -1,0 +1,21 @@
+a = cria nova célula a cima da que está selecionada
+b = cria nova célula abaixo
+dd = delete célula
+
+esc = modo de "seleção" -> não edita o código
+enter = modo de edição
+
+setas = navegar para cima e para baixo no código
+
+m = markdown
+y = código python
+
+ctrl+enter = executa e mantém a seleção na célula que está
+shift+enter = executa e vai para a de baixo
+z = undo (não precisa ctrl)
+x = cut
+v = cola (célula)
+c = copia (mantém contador de execuções)
+
+
+
