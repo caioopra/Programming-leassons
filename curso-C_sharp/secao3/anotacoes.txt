@@ -126,3 +126,38 @@ string variavel = Console.ReadLine();	=> retorna string
 25. Operadores comparativos
 >, <, >=, <=, ==, !=
 
+
+26. Operadores lógios
+&&, ||, !
+
+
+27. If-else
+if (...) {
+}
+
+if (...) {}
+else {}
+
+if () {}
+else if () {}
+else if () {}
+else {}
+
+=> se bloco tiver apenas um comando, pode não colocar {}
+	if (...)
+		comando
+	else if ()
+		comando
+	else
+		comando
+
+
+28. Escopo e inicialização
+declarar var: int x;
+iniciar  var: x = 10;
+
+
+30. Funções
+Math.Sqrt(double)
+Console.WriteLine(string)
+=> funções que sejam usadas dentro da Main precisam ser também static
