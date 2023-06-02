@@ -1,0 +1,4 @@
+npm:
+    install (baixa todas dependecias do projeto)
+    init (cria package no projeto)
+    server (inicializa o servidor)
