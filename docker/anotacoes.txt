@@ -1,0 +1,70 @@
+docker images    -> lista imagens locais
+docker ps        -> containers rodando
+    -a     -> mostra todos os containers, rodando ou não
+        -> cada vez que chama run, ele cria um novo container
+docker pull image:version
+docker pull image   -> baixa a mais recente
+
+
+docker run imagename:tag   -> rodar container
+    -d  /  --detach     -> roda container em background e printa o ID do container
+    --name nome         -> cria nome customizado para o container
+
+docker start containerID   -> roda container já criado
+
+docker logs {containerId}   -> printa logs do container
+
+docker stop {contID}
+
+
+Port Binding: mapear para uma porta um container rodando em background
+docker run -d -p portaDestino:portaContainer image:version
+
+    nginx roda sobre a porta 80 (no caso é portaContainer) -> pode fazer binding pra acessar ela (quando ela roda em background)
+    docker run -d -p 9000:80 nginx
+    -> por padrão, se usa a mesma porta no host e container
+
+
+
+FROM 
+COPY src destino     (destino/  pra saber que precisa criar a pasta)
+WORKDIR  (pasta que vai acessar para dar os comandos)
+
+RUN ... (comando)
+CMD ... (comando, mas a última coisa que vai executar quando o container começar; só pode ter um CMD dentro de Dockerfile)
+
+docker build -t nome:versao path/save/
+
+
+
+
+Network:
+docker network ls
+
+docker network create networkName
+    --net networkName
+    -> além do -p para setar a porta
+
+docker network ls
+
+
+
+Docker Compose (.yaml):
+    version: x
+    services:
+        nomeDoContainer:    (vindo do --name)
+            image: nomeDaImagem  (última parte do comadno de run)
+            ports:
+              - host:container
+            environment:     (variáveis de ambiente)
+                ...
+
+-> cria rede em comum (não precisa especificar qual rede vão rodar)
+-> cria um arquivo .yaml para o dockercompose (cuidar da identação)
+
+docker compose -f arquivo.yaml up    (-d pra ficar em background)
+    -> up faz subir os containers
+    -> down desativa os containers ativos (ps)
+        -> remove rede também (pode)
+
+
